@@ -1,14 +1,35 @@
+@font-face {
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Tourney'), url('https://fonts.cdnfonts.com/s/107427/Tourney[wdth,wght].woff') format('woff');
+}
+@font-face {
+    font-family: 'Tourney';
+    font-style: italic;
+    font-weight: 100;
+    src: local('Tourney'), url('https://fonts.cdnfonts.com/s/107427/Tourney-Italic[wdth,wght].woff') format('woff');
+}
 body {
     position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    text-transform: lowercase;
 }
-h1 {
-    color: blue;
+.banner {
+    font-family: "Tourney";
+    font-size: 20px;
+    color: rgb(247, 247, 144);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-h2 {
-    font-family: "Felipa", cursive;
+.banner img {   
+    width: auto;
+    height: 40px;
+    margin-top: 30px;
 }
 #frontpage-box {
     position: absolute;
@@ -39,17 +60,34 @@ h2 {
     width: 9%;
     height: auto;
 }
-#frontpage-footer {
+/* footer-component {
+    justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    gap: 10px;
+    padding: 20px;
+    color: white;
 }
-#frontpage-footer span, #frontpage-footer a {
+footer-component span, footer-component a {
     font-family: "Comic Sans MS", sans-serif;
     text-decoration: underline;
     color: white;
+    bottom: 0px;
+    left: 50%;
+    line-height: 0.5em;
+    padding: 0.1em;
+    transition: color .2s;
+} */
+#footer {
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#footer span, #footer a {
+    font-family: "Comic Sans MS", sans-serif;
+    text-decoration: underline;
+    color: rgb(187, 187, 187);
     bottom: 0px;
     left: 50%;
     line-height: 0.5em;
@@ -62,13 +100,13 @@ h2 {
     transition: color .12s ease-in;
 }
 #button-style-box {
-    box-shadow: 0 0 40px rgb(116, 116, 116);
+    /* box-shadow: 0 0 40px rgb(116, 116, 116); */
     background-color: #adadad;
     color: black;
     font: 15px tahoma, sans-serif;
     float: left;
     width: 45%;
-    padding: 40px;
+    padding: 20px;
     align-items: center;
     left: 50%;
     transform: translateX(-50%);
@@ -81,7 +119,12 @@ h2 {
     border-color: #746974 #cbcbcb #cbcbcb #746974;
     border-style: solid;
     border-width: 5px;
+    width: 70%;
 }
 #footer-banner {
-    height: 200px;
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
