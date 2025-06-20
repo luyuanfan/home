@@ -69,10 +69,9 @@ h2 {
     width: 45%;
     padding: 40px;
     align-items: center;
-    position: absolute;
-    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    position: relative;
 
     border-color: #cbcbcb #4e474e #4e474e #cbcbcb;
     border-style: solid;
