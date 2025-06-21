@@ -10,6 +10,22 @@
     font-weight: 100;
     src: local('Tourney'), url('https://fonts.cdnfonts.com/s/107427/Tourney-Italic[wdth,wght].woff') format('woff');
 }
+@font-face {
+    font-family: "ByteBounce";
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/ByteBounce.ttf") format("truetype");
+}
+@font-face {
+    font-family: "BlueScreen";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/BlueScreen.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Blox2";
+    src: url("../fonts/Blox2.ttf") format("truetype");
+}
 @keyframes tilt-shaking {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(7deg); }
@@ -134,7 +150,6 @@ footer-component span, footer-component a {
     border-color: #cbcbcb #4e474e #4e474e #cbcbcb;
     border-style: solid;
     border-width: 5px;
-    position: relative;
 }
 .centered-img {
     text-align: center;
@@ -162,7 +177,10 @@ footer-component span, footer-component a {
 .image-grid figure {
     margin: 0;
     padding: 0;
-  }
+}
+figcaption {
+    font-size: smaller;
+}
 #footer-banner {
     width: 50%;
     height: auto;
@@ -195,10 +213,33 @@ footer-component span, footer-component a {
     text-decoration: none;
 }
 .crazy-box {
-    background: 0 20px #f0f;
-    border-image: url("../images/border.gif") 0 20 repeat; 
+    overflow: auto;
+    padding: 30px;
+    width: 40%;
+    background: url("../images/swirl.gif") #000232;
+    background-blend-mode: overlay;
+    color: whitesmoke;
+    border-image: url("../images/border.gif") 0 20 repeat;
     border-image-repeat: repeat;
     border-left: 20px solid;
     border-right: 20px solid;
     overflow: auto;
+    /* font: 15px tahoma, sans-serif; */
+}
+.crazy-box a {
+    color: #FF13F0;
+}
+.crazy-text {
+    /* font-family: "ByteBounce"; */
+    /* font-family: "BlueScreen"; */
+    background-image: url("../images/swirl.gif");
+    /* background: #FF13F0; */
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-family: "Blox2"; */
+    font-family: "Tourney";
+    color: #FF13F0;
+    margin-bottom: -10px;
 }
