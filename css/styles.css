@@ -12,9 +12,9 @@
 }
 @keyframes tilt-shaking {
     0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
+    25% { transform: rotate(7deg); }
     50% { transform: rotate(0deg); }
-    75% { transform: rotate(-5deg); }
+    75% { transform: rotate(-7deg); }
     100% { transform: rotate(0deg); }
 }
 .tilt-shaking {
@@ -27,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     text-transform: lowercase;
+    align-items: center;
 }
 h2 {
     margin-top: 5%;
@@ -48,12 +49,18 @@ h2 {
     height: 40px;
     margin-top: 30px;
 }
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 #frontpage-box {
+    flex: 1;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -100%);
-    font-size: larger;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,13 +71,16 @@ h2 {
     text-align: center;
 }
 #frontpage-intro p {
-    font-family: "Felipa", cursive;
-    font-size: larger;
-    color: blue;
+    font-family: 'Tourney';
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(247, 247, 144);
     margin: 0 5px;
 }
 #frontpage-intro a {
-    color: yellow;
+    margin-top: 50px;
+    font-family: "Comic Sans MS", sans-serif;
+    color: whitesmoke;
     margin: 0 5px;
 }
 #spinning-star {
@@ -94,14 +104,11 @@ footer-component span, footer-component a {
     padding: 0.1em;
     transition: color .2s;
 } */
-
 #footer {
     align-items: center;
     position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 #footer span, #footer a {
     font-family: "Comic Sans MS", sans-serif;
@@ -127,8 +134,6 @@ footer-component span, footer-component a {
     border-color: #cbcbcb #4e474e #4e474e #cbcbcb;
     border-style: solid;
     border-width: 5px;
-    left: 50%;
-    transform: translateX(-50%);
     position: relative;
 }
 .centered-img {
@@ -167,19 +172,33 @@ footer-component span, footer-component a {
 }
 .nav-bar {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 20%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-    width: 20%;
+    transform: translateY(-40%);
+    transform: translateX(-70%);
+    width: 15%;
+}
+.nav-bar hr {
+    width: 100%;
+    text-align: left;
+    height: 2px;
+    color: rgb(247, 247, 144);
 }
 .nav-bar a {
     font-family: "Tourney";
     font-size: 25px;
-    color: rgb(247, 247, 144);
+    color: rgb(247, 247, 183);
     grid-area: nav;
     width: 200px;
     text-align: left;
     margin: 10px;
     text-decoration: none;
+}
+.crazy-box {
+    background: 0 20px #f0f;
+    border-image: url("../images/border.gif") 0 20 repeat; 
+    border-image-repeat: repeat;
+    border-left: 20px solid;
+    border-right: 20px solid;
+    overflow: auto;
 }
