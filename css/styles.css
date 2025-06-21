@@ -40,6 +40,8 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding-top: 40px;
+    margin-top: -40px;
 }
 .banner img {   
     width: auto;
@@ -162,4 +164,22 @@ footer-component span, footer-component a {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+.nav-bar {
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 20%;
+}
+.nav-bar a {
+    font-family: "Tourney";
+    font-size: 25px;
+    color: rgb(247, 247, 144);
+    grid-area: nav;
+    width: 200px;
+    text-align: left;
+    margin: 10px;
+    text-decoration: none;
 }
