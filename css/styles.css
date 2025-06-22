@@ -26,6 +26,10 @@
     font-family: "Blox2";
     src: url("../fonts/Blox2.ttf") format("truetype");
 }
+@font-face {
+    font-family: "ms pgothic web";
+    src: url(https://files.catbox.moe/mvrh4h.woff) format(woff)
+}
 @keyframes tilt-shaking {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(7deg); }
@@ -123,7 +127,7 @@ footer-component span, footer-component a {
 #footer {
     align-items: center;
     position: relative;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 #footer span, #footer a {
@@ -164,6 +168,7 @@ footer-component span, footer-component a {
     width: 98%;
     justify-content: center;
     display: flex;
+    image-rendering: pixelated;
 }
 .grid-img {
     width: 95%;
@@ -213,13 +218,17 @@ figcaption {
     text-decoration: none;
 }
 .crazy-box {
+    width: 40em;
+    max-width: 90vw;
     overflow: auto;
     padding: 30px;
     width: 40%;
     background: url("../images/swirl.gif") #000232;
     background-blend-mode: overlay;
-    color: whitesmoke;
-    border-image: url("../images/border.gif") 0 20 repeat;
+    color: rgb(220, 219, 219);
+    font-size: large;
+    font-family: "ms pgothic web", tahoma, sans-serif;
+    border-image: url("../images/border.gif") 0 10 repeat;
     border-image-repeat: repeat;
     border-left: 20px solid;
     border-right: 20px solid;
@@ -227,7 +236,7 @@ figcaption {
     /* font: 15px tahoma, sans-serif; */
 }
 .crazy-box a {
-    color: #FF13F0;
+    color: #e841dd;
 }
 .crazy-text {
     /* font-family: "ByteBounce"; */
