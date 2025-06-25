@@ -2,14 +2,14 @@
     font-family: 'Tourney';
     font-style: normal;
     font-weight: 100;
-    src: local('Tourney'), url('https://fonts.cdnfonts.com/s/107427/Tourney[wdth,wght].woff') format('woff');
+    src: url("../fonts/Tourney.woff") format('woff');
 }
 @font-face {
     font-family: 'Tourney';
     font-style: italic;
     font-weight: 100;
-    src: local('Tourney'), url('https://fonts.cdnfonts.com/s/107427/Tourney-Italic[wdth,wght].woff') format('woff');
-}
+    src: url('../fonts/TourneyItalic.woff') format('woff');
+} 
 @font-face {
     font-family: "ByteBounce";
     font-style: normal;
@@ -28,7 +28,7 @@
 }
 @font-face {
     font-family: "ms pgothic web";
-    src: url(https://files.catbox.moe/mvrh4h.woff) format(woff)
+    src: url("../fonts/MsPgothicwWeb.woff") format(woff)
 }
 @keyframes tilt-shaking {
     0% { transform: rotate(0deg); }
@@ -125,6 +125,7 @@ footer-component span, footer-component a {
     transition: color .2s;
 } */
 #footer {
+    display: block;
     align-items: center;
     position: relative;
     margin-top: 10px;
