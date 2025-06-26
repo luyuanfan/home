@@ -58,6 +58,7 @@ h2 {
 }
 .banner {
     font-family: "Tourney";
+    color: whitesmoke;
     font-size: 20px;
     text-align: center;
     display: flex;
