@@ -30,6 +30,10 @@
     font-family: "ms pgothic web";
     src: url("../fonts/MsPgothicwWeb.woff") format(woff)
 }
+@font-face {
+    font-family: "DPComic";
+    src: url("../fonts/dpcomic.woff2") format(woff2)
+}
 @keyframes tilt-shaking {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(7deg); }
@@ -53,14 +57,18 @@ h2 {
     margin-top: 5%;
     font: 20px tahoma, sans-serif;
 }
-#train-trip {
-    color: whitesmoke;
+#train-trip, #euro-trip {
+    /* color: whitesmoke; */
+    font-family: "DPComic";
+    color: blue;
+    font-size: 23px;
 }
 .banner {
-    font-family: "Tourney";
-    color: whitesmoke;
-    font-size: 20px;
-    text-align: center;
+    /* font-family: "Tourney"; */
+    font-family: "DPComic";
+    /* color: whitesmoke; */
+    color: red;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -206,8 +214,9 @@ figcaption {
     transform: translateX(-50%);
 }
 .nav-bar {
-    width: 20em;
-    max-width: 15vw;
+    text-align: left;
+    width: 15em;
+    max-width: 10vw;
     position: fixed;
     top: 40%;
     left: 20%;
@@ -216,17 +225,14 @@ figcaption {
     width: 15%;
 }
 .nav-bar hr {
-    width: 20em;
-    max-width: 15vw;
-    width: 100%;
-    text-align: left;
-    height: 2px;
-    color: rgb(247, 247, 144);
+    text-align: center;
+    border-width: 2px;
+    color: rgb(251, 83, 50);
+    border-color: rgb(251, 83, 50);
 }
 .nav-bar a {
-    font-family: "Tourney";
-    font-size: 25px;
-    color: rgb(247, 247, 183);
+    font-size: 28px;
+    color: blue;
     grid-area: nav;
     width: 200px;
     text-align: left;
