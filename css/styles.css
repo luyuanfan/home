@@ -63,6 +63,12 @@ h2 {
     color: blue;
     font-size: 23px;
 }
+.banner.crazy-text {
+    font-size: 20px;
+}
+.nav-bar.crazy-text {
+    font-size: 12px;
+}
 .banner {
     /* font-family: "Tourney"; */
     font-family: "DPComic";
