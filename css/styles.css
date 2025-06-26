@@ -230,6 +230,11 @@ figcaption {
     color: rgb(251, 83, 50);
     border-color: rgb(251, 83, 50);
 }
+.nav-bar.crazy-text hr {
+    border-width: 1px;
+    border-color: whitesmoke !important;
+    color: whitesmoke !important;
+}
 .nav-bar a {
     font-size: 28px;
     color: blue;
