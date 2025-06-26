@@ -163,9 +163,9 @@ footer-component span, footer-component a {
     border-style: solid;
     border-width: 5px;
 }
-#button-style-box a {
+#button-style-box a, #button-style-box figcaption {
     text-decoration: none;
-    color: black;
+    color: blue;
 }
 .centered-img {
     text-align: center;
