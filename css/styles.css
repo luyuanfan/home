@@ -62,7 +62,7 @@ h2 {
     font: 20px tahoma, sans-serif;
 }
 .banner.crazy-text {
-    font-size: 20px;
+    font-size: 17px !important;
 }
 .banner {
     /* font-family: "Tourney"; */
@@ -73,13 +73,13 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding-top: 40px;
-    margin-top: -40px;
+    padding-top: 30px;
+    margin-top: -30px;
+    align-items: center;
 }
 .banner img {   
     width: auto;
-    height: 40px;
-    margin-top: 30px;
+    height: 30px;
 }
 .page-wrapper {
     min-height: 100vh;
@@ -123,23 +123,6 @@ h2 {
     width: 9%;
     height: auto;
 }
-/* footer-component {
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    color: white;
-}
-footer-component span, footer-component a {
-    font-family: "Comic Sans MS", sans-serif;
-    text-decoration: underline;
-    color: white;
-    bottom: 0px;
-    left: 50%;
-    line-height: 0.5em;
-    padding: 0.1em;
-    transition: color .2s;
-} */
 #footer {
     display: block;
     align-items: center;
@@ -166,7 +149,7 @@ footer-component span, footer-component a {
     background-color: #adadad;
     color: black;
     font: 15px tahoma, sans-serif;
-    width: 45%;
+    width: 40%;
     padding: 20px;
     border-color: #cbcbcb #4e474e #4e474e #cbcbcb;
     border-style: solid;
@@ -179,6 +162,7 @@ footer-component span, footer-component a {
 .banner.retro-text {
     /* color: whitesmoke; */
     font-family: "DPComic";
+    font-size: 20px;
     color: blue;
 }
 #button-style-box a, #button-style-box figcaption {
@@ -198,7 +182,6 @@ footer-component span, footer-component a {
     width: 98%;
     justify-content: center;
     display: flex;
-    image-rendering: pixelated;
 }
 .grid-img {
     width: 95%;
@@ -263,7 +246,7 @@ figcaption {
     max-width: 90vw;
     overflow: auto;
     padding: 30px;
-    width: 40%;
+    width: 37%;
     background: url("../images/swirl.gif") #000232;
     background-blend-mode: overlay;
     color: rgb(220, 219, 219);
@@ -303,23 +286,6 @@ figcaption {
     width: 18px;
     height: 18px;
 }
-.spinning-img {
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
-}
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
-}
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
-}
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
-}
 .hidden-text {
     display: none;
 }
@@ -327,16 +293,23 @@ figcaption {
     margin-top: 15px;
     display: block;
 }
-.stardew-text {
+.stardew-title {
     font-family: "StardewValley" !important;
     color:rgb(97, 26, 13) !important;
     text-shadow: 1px 1px #CE9C5F !important;
     font-size: 25px !important;
     text-decoration: none !important;
 }
+.stardew-text {
+    font-family: "StardewValley" !important;
+    color:rgb(97, 26, 13) !important;
+    text-shadow: 1px 0px #cfb28f !important;
+    font-size: 25px !important;
+    text-decoration: none !important;
+}
 .nav-bar.stardew-text a {
     text-decoration: none;
-    font-size: 30px !important;
+    font-size: 40px !important;
     color:rgb(97, 26, 13) !important;
     text-shadow: 1px 1px #CE9C5F !important;
 }
@@ -345,11 +318,14 @@ figcaption {
     border-color: rgb(97, 26, 13);
 }
 .stardew-box {
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
     padding: 20px;
     border-radius: 2px;
     background-color: #fcd488;
     border-color: #f18817;
+    align-items: center;
     box-shadow:
         inset 4px 4px 0 #e4b274, 
         0 0 0 3px #643424,
@@ -358,9 +334,20 @@ figcaption {
         0 0 0 12px #392f08;
 }
 .stardew-img {
+    width: 98% !important;
     border-radius: 1px;
     box-shadow:
-        0 0 0 2px #a07231,
-        0 0 0 4px #ed891a,
-        0 0 0 6px #572518;
+        0 0 0 3px #43380a,
+        0 0 0 6px #e4b274;
+}
+.stardew-banner {
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #fcd488;
+    border-color: #f18817;
+    box-shadow:
+        inset 4px 4px 0 #e4b274, 
+        0 0 0 3px #643424,
+        0 0 0 6px #ed891a,
+        0 0 0 8px #392f08;
 }
