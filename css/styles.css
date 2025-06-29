@@ -34,6 +34,10 @@
     font-family: "DPComic";
     src: url("../fonts/dpcomic.woff2") format(woff2)
 }
+@font-face {
+    font-family: "StardewValley";
+    src: url("../fonts/StardewValley.woff2") format(woff2)
+}
 @keyframes tilt-shaking {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(7deg); }
@@ -57,17 +61,8 @@ h2 {
     margin-top: 5%;
     font: 20px tahoma, sans-serif;
 }
-#train-trip, #euro-trip {
-    /* color: whitesmoke; */
-    font-family: "DPComic";
-    color: blue;
-    font-size: 23px;
-}
 .banner.crazy-text {
     font-size: 20px;
-}
-.nav-bar.crazy-text {
-    font-size: 12px;
 }
 .banner {
     /* font-family: "Tourney"; */
@@ -177,6 +172,15 @@ footer-component span, footer-component a {
     border-style: solid;
     border-width: 5px;
 }
+.retro-text {
+    font-family: "DPComic";
+    color: blue;
+}
+.banner.retro-text {
+    /* color: whitesmoke; */
+    font-family: "DPComic";
+    color: blue;
+}
 #button-style-box a, #button-style-box figcaption {
     text-decoration: none;
     color: blue;
@@ -230,7 +234,7 @@ figcaption {
     transform: translateX(-70%);
     width: 15%;
 }
-.nav-bar hr {
+.nav-bar.retro-text hr {
     text-align: center;
     border-width: 2px;
     color: rgb(251, 83, 50);
@@ -241,8 +245,12 @@ figcaption {
     border-color: whitesmoke !important;
     color: whitesmoke !important;
 }
-.nav-bar a {
-    font-size: 28px;
+.nav-bar.crazy-text a {
+    font-size: 23px;
+}
+.nav-bar.retro-text a {
+    text-decoration: none;
+    font-size: 25px;
     color: blue;
     grid-area: nav;
     width: 200px;
@@ -319,6 +327,40 @@ figcaption {
     margin-top: 15px;
     display: block;
 }
-.pixel-text {
-
+.stardew-text {
+    font-family: "StardewValley" !important;
+    color:rgb(97, 26, 13) !important;
+    text-shadow: 1px 1px #CE9C5F !important;
+    font-size: 25px !important;
+    text-decoration: none !important;
+}
+.nav-bar.stardew-text a {
+    text-decoration: none;
+    font-size: 30px !important;
+    color:rgb(97, 26, 13) !important;
+    text-shadow: 1px 1px #CE9C5F !important;
+}
+.nav-bar.stardew-text hr {
+    border-width: 2px;
+    border-color: rgb(97, 26, 13);
+}
+.stardew-box {
+    width: 45%;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: #fcd488;
+    border-color: #f18817;
+    box-shadow:
+        inset 4px 4px 0 #e4b274, 
+        0 0 0 3px #643424,
+        0 0 0 6px #ed891a,
+        0 0 0 9px #994f0f,
+        0 0 0 12px #392f08;
+}
+.stardew-img {
+    border-radius: 1px;
+    box-shadow:
+        0 0 0 2px #a07231,
+        0 0 0 4px #ed891a,
+        0 0 0 6px #572518;
 }
