@@ -318,6 +318,7 @@ figcaption {
     border-width: 2px;
     border-color: rgb(97, 26, 13);
 }
+
 .stardew-box {
     display: flex;
     flex-direction: column;
