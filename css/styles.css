@@ -127,13 +127,13 @@ h2 {
     display: block;
     align-items: center;
     position: relative;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 #footer span, #footer a {
     font-family: "Comic Sans MS", sans-serif;
     text-decoration: underline;
-    color: whitesmoke;
+    color: rgb(217, 217, 217);
     bottom: 0px;
     left: 50%;
     line-height: 0.5em;
@@ -182,6 +182,7 @@ h2 {
     width: 98%;
     justify-content: center;
     display: flex;
+    margin: 5px;
 }
 .grid-img {
     width: 95%;
@@ -325,7 +326,7 @@ figcaption {
     border-radius: 2px;
     background-color: #fcd488;
     border-color: #f18817;
-    align-items: center;
+    align-items: left;
     box-shadow:
         inset 4px 4px 0 #e4b274, 
         0 0 0 3px #643424,
@@ -334,7 +335,6 @@ figcaption {
         0 0 0 12px #392f08;
 }
 .stardew-img {
-    width: 98% !important;
     border-radius: 1px;
     box-shadow:
         0 0 0 3px #43380a,
