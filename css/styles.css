@@ -126,6 +126,7 @@ h2 {
 #footer {
     display: block;
     align-items: center;
+    text-align: center;
     position: relative;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -271,7 +272,7 @@ figcaption {
     /* background: #FF13F0; */
     background-blend-mode: overlay;
     background-repeat: repeat;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     /* font-family: "Blox2"; */
     font-family: "Tourney";
