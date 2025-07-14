@@ -108,9 +108,10 @@ h2 {
     /* font-family: "Blox2"; */
     /* font-family: "BlueScreen"; */
     font-family: "ByteBounce";
+    /* font-family: "DPComic"; */
     /* font-style: italic; */
     font-size: 50px;
-    color: blue;
+    color:yellowgreen;
     margin-bottom: -20px;
 }
 #frontpage-intro a {
@@ -352,4 +353,21 @@ figcaption {
         0 0 0 3px #643424,
         0 0 0 6px #ed891a,
         0 0 0 8px #392f08;
+}
+.visuallyhidden{position:absolute;clip:rect(1px,1px,1px,1px)}
+.copybutton{background-color:#fff;border:0;outline:0;cursor:pointer;opacity:1;position:absolute;width:40px;height:40px;z-index:9;border-radius:24px}
+.button-tooltip-container {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    min-height: 30px;
+
+}
+#custom-tooltip {
+    display: none;
+    margin-left: 40px;
+    padding: 5px 12px;
+    background-color: #000000df;
+    border-radius: 4px;
+    color: #fff;
 }
